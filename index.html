@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contador MVP</title>
+  <style>
+    /* Centrar todo vertical y horizontalmente */
+    body {
+      display: flex;
+      flex-direction: column; /* Apilar en columna */
+      justify-content: center; /* Centrar vertical */
+      align-items: center; /* Centrar horizontal */
+      height: 100vh; /* Que tome toda la altura */
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+    }
+
+    /* Número grande */
+    #cont {
+      font-size: 8rem; /* Muy grande */
+      margin: 20px 0;
+      user-select: none; /* Evita que se seleccione */
+    }
+
+    /* Botones grandes */
+    button {
+      font-size: 3rem;
+      padding: 10px 30px;
+      margin: 0 15px;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      background-color: #007bff;
+      color: rgb(255, 255, 255);
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Para que los botones estén en una línea */
+    .button-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button id="dec">-</button>
+    <span id="cont">0</span>
+    <button id="inc">+</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
